@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 require("dotenv").config();
 const express = require("express");
 const app = express();
@@ -80,7 +81,7 @@ app.put("/api/notes/:id", (request, response, next) => {
     .catch((error) => next(error));
 });
 
-const unknownEndpoint = (request, reponse) => {
+const unknownEndpoint = (request, response) => {
   response.status(404).send({ error: "Unknown endpoint" });
 };
 app.use(unknownEndpoint);

@@ -1,3 +1,6 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable @stylistic/js/semi */
+/* eslint-disable @stylistic/js/quotes */
 const mongoose = require("mongoose");
 
 mongoose.set("strictQuery", false);
